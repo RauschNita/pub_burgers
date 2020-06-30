@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>Delivery</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Kraken Pub & Burgers</a>
@@ -16,8 +19,8 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+            <ul class="navbar-nav">
+                <li class="nav-item">
                     <a class="nav-link" href="menu.html">Étlap <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -43,6 +46,25 @@
     </ol>
 
     <div class="container">
+        <div class="col-4">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="example@gmail.com">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
         <form>
             <fieldset>
                 <legend>Személyes adatok</legend>
@@ -60,54 +82,55 @@
                 </div>
                 <div>
                     <label for="comment">Megjegyzés:</label>
-                     <textarea id="comment" name="comment" rows="5"></textarea>
+                    <textarea id="comment" name="comment" rows="5"></textarea>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Termék adatai</legend>
                 <span>Extra feltét:</span>
-            <div>
-                <input checked id="nothing" name="extra" type="radio" value="0">
-                <label for="nothing">Nem kérek</label>
-            </div>
-            <div>
-                <input id="cheese" name="extra" type="radio" value="300">
-                <label for="cheese">feltét 1 </label>
-            </div>
-            <div>
-                <input id="doule-cheese" name="extra" type="radio" value="600">
-                <label for="doule-cheese">feltét 2 </label>
-            </div>
-            <div>
-                <input id="doule-meat" name="extra" type="radio" value="1000">
-                <label for="doule-meat">feltét 3 </label>
-            </div>
-            <div>
-                <input id="doule-doule" name="extra" type="radio" value="100">
-                <label for="doule-doule">feltét 4 </label>
-            </div>
-            <div>
-                <input id="sth-else" name="extra" type="radio" value="100">
-                <label for="sth-else">feltét 5 </label>
-            </div>
-            <div>
-                <label for="sauce">Szósz:</label>
-                <select name="sauce" id="sauce">
-                    <option value="0" selected>szósz 1</option>
-                    <option value="100">szósz 2</option>
-                </select>
-            </div>
-            <div>
-                <label for="quantity">Mennyiség: </label>
-                <input id="quantity" name="quantity" type="numer" min="1" max="10">
-            </div>
+                <div>
+                    <input checked id="nothing" name="extra" type="radio" value="0">
+                    <label for="nothing">Nem kérek</label>
+                </div>
+                <div>
+                    <input id="cheese" name="extra" type="radio" value="300">
+                    <label for="cheese">feltét 1 </label>
+                </div>
+                <div>
+                    <input id="doule-cheese" name="extra" type="radio" value="600">
+                    <label for="doule-cheese">feltét 2 </label>
+                </div>
+                <div>
+                    <input id="doule-meat" name="extra" type="radio" value="1000">
+                    <label for="doule-meat">feltét 3 </label>
+                </div>
+                <div>
+                    <input id="doule-doule" name="extra" type="radio" value="100">
+                    <label for="doule-doule">feltét 4 </label>
+                </div>
+                <div>
+                    <input id="sth-else" name="extra" type="radio" value="100">
+                    <label for="sth-else">feltét 5 </label>
+                </div>
+                <div>
+                    <label for="sauce">Szósz:</label>
+                    <select name="sauce" id="sauce">
+                        <option value="0" selected>szósz 1</option>
+                        <option value="100">szósz 2</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="quantity">Mennyiség: </label>
+                    <input id="quantity" name="quantity" type="numer" min="1" max="10">
+                </div>
             </fieldset>
             <div>
                 <input type="button" value="Order set"> Ár: <span>1200</span> Ft
-            </div>  
+            </div>
         </form>
     </div>
 
-    
+
 </body>
+
 </html>
