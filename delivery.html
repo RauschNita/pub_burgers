@@ -17,23 +17,28 @@
 
     <div class="container">
         <form>
-            <div>
-                <label for="name">Név: *</label>
-                <input id="name" name="name" type="text" required>
-            </div>
-            <div>
-                <label for="email">E-mail: *</label>
-                <input id="email" name="email" type="email" required>
-            </div>
-            <div>
-                <label for="address">Cím: *</label>
-                <input id="address" name="address" type="text" required>
-            </div>
-            <div>
-                <label for="comment">Megjegyzés:</label>
-                 <textarea id="comment" name="comment" rows="5"></textarea>
-            </div>
-            <span>Extra feltét:</span>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <div>
+                    <label for="name">Név: *</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div>
+                    <label for="email">E-mail: *</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div>
+                    <label for="address">Cím: *</label>
+                    <input id="address" name="address" type="text" required>
+                </div>
+                <div>
+                    <label for="comment">Megjegyzés:</label>
+                     <textarea id="comment" name="comment" rows="5"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Termék adatai</legend>
+                <span>Extra feltét:</span>
             <div>
                 <input checked id="nothing" name="extra" type="radio" value="0">
                 <label for="nothing">Nem kérek</label>
@@ -58,6 +63,19 @@
                 <input id="sth-else" name="extra" type="radio" value="100">
                 <label for="sth-else">feltét 5 </label>
             </div>
+            <div>
+                <label for="sauce">Szósz:</label>
+                <select name="sauce" id="sauce">
+                    <option value="0" selected>szósz 1</option>
+                    <option value="100">szósz 2</option>
+                </select>
+            </div>
+            <div>
+                <label for="quantity">Mennyiség: </label>
+                <input id="quantity" name="quantity" type="numer" min="1" max="10">
+            </div>
+            </fieldset>
+            
         </form>
     </div>
 
