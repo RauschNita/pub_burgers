@@ -44,12 +44,13 @@
                 <form action="">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email cím</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <input type="email" name="email-input" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="example@gmail.com">
                         <small id="emailHelp" class="form-text text-muted">
                             Valós e-mail címet kell megadnia.
                         </small>
                     </div>
+                    <button onclick="validateEmail()" type="button" class="btn btn-primary">Check</button>
                     <div class="form-group">
                         <label for="">Feltét</label>
                         <input type="text" name="top-input" class="form-control">

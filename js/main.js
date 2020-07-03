@@ -5,7 +5,6 @@ function calcAmount() {
     let amountNumber = parseInt(amountInput.value);
     amountNumber = isNaN(amountNumber) ? 0 : amountNumber;
 
-
     if (amountNumber > 10) {
         alert("Maximum 10 db terméket vásárolhat!")
     } else if (amountNumber < 1) {
@@ -15,14 +14,16 @@ function calcAmount() {
         showAmount.innerHTML = amount;
     }
 
-    function ValidateEmail() {
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value)) {
-            return (true)
-        }
-        alert("You have entered an invalid email address!")
-        return (false)
+}
+
+function validateEmail(inputText) {
+    const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let emailInput = document.querySelector("input[name='email-input']");
+
+    if (emailInput.value.match(mailformat)) {
+        return (true)
     }
-
-
+    alert("You have entered an invalid email address!")
+    return (false)
 
 }
